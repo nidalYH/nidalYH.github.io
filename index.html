@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · Cerca</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65; max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem;
+    color: #23271f; background: #f6f4ee;
+  }
+  h1 { font-size: 1.9rem; letter-spacing: -.02em; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.25rem; letter-spacing: -.01em; }
+  .updated { color: #5c6357; font-size: .9rem; margin-top: 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { border: 1px solid #d9d6cc; padding: .55rem .7rem; text-align: left; vertical-align: top; }
+  th { background: #ece9df; }
+  code { background: #ece9df; padding: .1rem .3rem; border-radius: 4px; }
+  ul { padding-left: 1.2rem; }
+  strong { color: #2c5540; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #12140f; color: #e7e6e0; }
+    th { background: #1f231c; }
+    th, td { border-color: #333a2f; }
+    code { background: #1f231c; }
+    .updated { color: #9aa093; }
+    strong { color: #8fb89b; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Política de privacidad de Cerca</h1>
+<p class="updated">Última actualización: 22 de julio de 2026</p>
+
+<p>Cerca existe para compartir ubicación <strong>sin vigilancia</strong>. Esta política es corta porque guardamos muy poco: nuestro diseño técnico hace imposible almacenar lo que otras apps de ubicación almacenan de serie.</p>
+
+<h2>Qué datos tratamos</h2>
+<table>
+  <tr><th>Dato</th><th>Para qué</th><th>Cuánto tiempo</th></tr>
+  <tr><td>Correo electrónico</td><td>Iniciar sesión (enlace mágico, sin contraseña)</td><td>Mientras tengas cuenta</td></tr>
+  <tr><td>Nombre visible</td><td>Que tu círculo sepa quién eres</td><td>Mientras tengas cuenta</td></tr>
+  <tr><td>Sesiones de compartir (nivel elegido y caducidad; <strong>sin coordenadas</strong>)</td><td>Aplicar las reglas de simetría y caducidad</td><td>Se borran solas al caducar (máx. 48 h de higiene)</td></tr>
+  <tr><td>Registro de consultas ("X miró a Y")</td><td>El panel semanal que ambas partes ven por igual</td><td><strong>7 días</strong>, borrado automático</td></tr>
+  <tr><td>Consentimientos entre miembros</td><td>Saber que ambas partes aceptaron compartir</td><td>Caducan a los 30 días; se reconfirman</td></tr>
+  <tr><td>Códigos de invitación</td><td>Unirse a un círculo</td><td>7 días o un solo uso</td></tr>
+</table>
+
+<h2>Qué NO guardamos — y no podríamos enseñar aunque nos lo pidieran</h2>
+<ul>
+  <li><strong>No hay historial de ubicaciones.</strong> Los datos de ubicación viajan por un canal efímero y viven minutos en la memoria de los dispositivos de tu círculo. <strong>No existe ninguna tabla de ubicaciones en nuestros servidores.</strong> No hay timeline, ni heatmap, ni "dónde estuvo ayer".</li>
+  <li><strong>La coordenada exacta no sale de tu teléfono</strong> salvo que tú la actives: como concesión puntual a una persona (máx. 60 minutos) o en <strong>modo fiesta</strong> — círculos de evento de 3 o más personas que caducan enteros en 24 h como máximo, donde cada quien enciende y apaga la suya y unirse exige aceptarlo expresamente antes de entrar. En el nivel "zona", tu dispositivo difumina la posición a ~1 km <strong>antes</strong> de enviarla: el servidor nunca ve la coordenada real.</li>
+  <li><strong>No leemos tus contactos.</strong> Invitar es compartir un código por la app que tú elijas.</li>
+  <li><strong>No hay nivel de batería, velocidad, "última vez activo", ni puntuaciones.</strong></li>
+  <li>No vendemos datos ni mostramos publicidad. No hay terceros de analítica.</li>
+</ul>
+
+<h2>Ubicación en segundo plano</h2>
+<p>Cerca puede seguir compartiendo tu ubicación con la app cerrada, pero <strong>solo mientras tienes una sesión de compartir activa</strong>, que tú inicias y que caduca sola. Mientras está activa se muestra una <strong>notificación persistente</strong>: siempre ves que estás compartiendo. Cuando la sesión termina o la pausas, el uso del GPS cesa. Nunca hay rastreo permanente.</p>
+
+<h2>Cómo funcionan las reglas (y por qué te protegen)</h2>
+<ul>
+  <li><strong>Todo caduca solo.</strong> No existe el "compartir para siempre": técnicamente no hay forma de crear una sesión sin fecha de fin (máx. 12 h, renovable solo a mano).</li>
+  <li><strong>Simetría obligatoria.</strong> Si no compartes, no ves. No existen observadores.</li>
+  <li><strong>Mirar deja rastro.</strong> Cada consulta queda registrada y es visible; en el mapa en vivo, quien mira aparece como "mirando ahora".</li>
+  <li><strong>Rechazar una petición no notifica a nadie.</strong> Decir "no" no tiene coste social.</li>
+</ul>
+
+<h2>Servicios de terceros</h2>
+<ul>
+  <li><strong>Supabase</strong> (backend): autenticación y las tablas descritas arriba.</li>
+  <li><strong>OpenStreetMap</strong>: teselas del mapa. Tu IP llega a sus servidores al cargar el mapa, como en cualquier web con mapas.</li>
+  <li><strong>RevenueCat</strong> (solo si te suscribes a Cerca+): gestiona la suscripción y su estado.</li>
+</ul>
+
+<h2>Tus derechos</h2>
+<p>Puedes salir de cualquier círculo con un toque y <strong>borrar tu cuenta desde la propia app</strong> (Ajustes → Borrar mi cuenta), lo que elimina en cascada tu perfil, membresías, sesiones, consentimientos y registros. También puedes pedirnos una copia de lo poco que hay escribiendo a nuestro correo de contacto.</p>
+
+<h2>Menores</h2>
+<p>Cerca no está dirigida a menores de 16 años.</p>
+
+<h2>Contacto</h2>
+<p>Para cualquier duda sobre privacidad: <a href="mailto:cercaappcontact@gmail.com">cercaappcontact@gmail.com</a></p>
+
+<h2>Cambios</h2>
+<p>Si esta política cambia, lo verás en la app antes de que el cambio te aplique.</p>
+
+</body>
+</html>
